@@ -1,0 +1,807 @@
+	/*
+	Theme Name: Triggers 2.0
+	Theme URI: 
+	Author: Trigg Development Team
+	Author URI: https://www.trigg.com.br/
+	Description: Tema padrão para o website do progrmama de empreendedorismo Triggers powered by Visionários
+	Version: 2.0
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Tags: triggers, trigg, empreendedorismo, negócios, fintech, startup, programa, inovação
+	Text Domain: Triggers 2.0
+	*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('/fonts/icomoon/icomoon.eot?-rdnm34');
+    src:url('/fonts/icomoon/icomoon.eot?#iefix-rdnm34') format('embedded-opentype'),
+        url('/fonts/icomoon/icomoon.woff?-rdnm34') format('woff'),
+        url('/fonts/icomoon/icomoon.ttf?-rdnm34') format('truetype'),
+        url('/fonts/icomoon/icomoon.svg?-rdnm34#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+a, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: #000;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #8a8786;
+}
+
+.header-image{
+    width: 100%;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #8a8786;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #9e9e9e;
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+nav.menu{
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #8a8786;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   General Styles
+   ========================================================================== */
+
+article section img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+article section{
+    float: left;
+    width: 30%;
+    margin-bottom: 60px;
+    margin-left: 3%;
+    border-bottom: 1px solid #ccc;
+}
+
+article section iframe{
+    width: 100%;
+    height: 170px;
+}
+
+article h1{
+    text-transform: uppercase;
+    color: #49A993;
+}
+
+
+article{
+    margin-bottom: 1px solid #ccc;
+}
+
+article:first-of-type{
+    margin-bottom: 60px;
+    border-bottom: 1px solid #CCC;
+}
+
+.single-page-section{
+    width: 100%;
+}
+
+.single-post-section{
+    width: 100%;
+    margin: 0;
+}
+
+.single-post-section iframe{
+    width: 100%;
+    height: 575px;
+}
+
+.single-post-date{
+    font-size: 18px;
+    font-style: italic;
+    color: #B5B5B5;
+    margin: -20px 0 30px;
+}
+
+.single-post-author{
+    font-size: 18px;
+    font-style: italic;
+    color: #B5B5B5;
+    margin: -20px 0 30px;
+}
+
+.single-post-meta{
+    display: inline-block;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.single-post-meta p {
+    font-size: 12px;
+    font-style: italic;
+    color: #666;
+    margin: 0;
+}
+
+.single-post-meta span{
+    display: block;
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: -12px;
+}
+
+.page-header{
+    width: 100%;
+    height: 300px;
+    padding: 200px 0 0 60px;
+    background-color: #888;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-header h2{
+    font-size: 36px;
+    color: #FFF;
+}
+
+.logo-footer-conteiner{
+    width: 100%;
+    text-align: right;
+}
+
+.logo-footer-conteiner img{
+    width: 120px;
+}
+
+/* Default custom select styles */
+
+.select-form{
+    margin-bottom: 60px;
+}
+
+.initial-search-btn{
+    position: absolute;
+    display: inline-block;
+    left: 600px;
+    /* clear: both; */
+    border: 3px solid #000;
+    background: #FFF;
+    /* height: 44px; */
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 13px 20px;
+}
+
+div.cs-select {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    left: 30px;
+    text-align: left;
+    background: #fff;
+    z-index: 100;
+    width: 100%;
+    max-width: 500px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.cs-select:focus {
+    outline: none; /* For better accessibility add a style for this in your skin */
+}
+
+.cs-select select {
+    display: none;
+}
+
+.cs-select span {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Placeholder and selected option */
+.cs-select > span {
+    padding-right: 3em;
+}
+
+.cs-select > span::after,
+.cs-select .cs-selected span::after {
+    speak: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cs-select > span::after {
+    content: '\25BE';
+    right: 1em;
+}
+
+.cs-select .cs-selected span::after {
+    content: '\2713';
+    margin-left: 1em;
+}
+
+.cs-select.cs-active > span::after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+}
+
+div.cs-active {
+    z-index: 200;
+}
+
+/* Options */
+.cs-select .cs-options {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    visibility: hidden;
+}
+
+.cs-select.cs-active .cs-options {
+    visibility: visible;
+}
+
+.cs-select ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.cs-select ul span {
+    padding: 1em;
+}
+
+.cs-select ul li.cs-focus span {
+    background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+    padding-left: 1em;
+}
+
+.cs-select li.cs-optgroup > span {
+    cursor: default;
+}
+
+
+div.cs-skin-underline {
+    background: transparent;
+    font-size: 1.8em;
+    max-width: 400px;
+}
+
+@media screen and (max-width: 30em) {
+    div.cs-skin-underline { font-size: 1.2em; }
+}
+
+.cs-skin-underline > span {
+    padding: 0.5em 3em 0.5em 0.5em;
+    border-bottom: 3px solid #000;
+    border-color: inherit;
+    font-weight: bold;
+}
+
+.cs-skin-underline > span::after {
+    font-family: 'icomoon';
+    content: '\e003';
+    right: 0.25em;
+    -webkit-transform: translate3d(0,-50%,0) rotate3d(0,0,1,45deg);
+    transform: translate3d(0,-50%,0) rotate3d(0,0,1,45deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.cs-skin-underline.cs-active > span::after {
+    -webkit-transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
+    transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
+}
+
+.cs-skin-underline .cs-options {
+    background: #FFF;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
+    transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
+}
+
+.cs-skin-underline.cs-active .cs-options {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.cs-skin-underline ul span {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 66%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0.8em 0.8em;
+    opacity: 0;
+    border-bottom: 3px dashed #000;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.cs-select ul span::after {
+    content: '';
+    opacity: 0;
+}
+
+.cs-select .cs-selected span::after {
+    font-family: 'icomoon';
+    content: '\e010';
+    opacity: 1;
+    -webkit-transition: opacity 0.3s 0.7s;
+    transition: opacity 0.3s 0.7s;
+}
+
+
+.cs-skin-underline ul span::before {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    -webkit-transform: translate3d(200%,0,0);
+    transform: translate3d(200%,0,0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.cs-skin-underline.cs-active ul span,
+.cs-skin-underline.cs-active ul span::before {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.cs-skin-underline li:nth-child(5) span,
+.cs-skin-underline li:nth-child(5) span::before,
+.cs-skin-underline.cs-active li:first-child span,
+.cs-skin-underline.cs-active li:first-child span::before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.cs-skin-underline li:nth-child(4) span,
+.cs-skin-underline li:nth-child(4) span::before,
+.cs-skin-underline.cs-active li:nth-child(2) span,
+.cs-skin-underline.cs-active li:nth-child(2) span::before {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+.cs-skin-underline li:nth-child(3) span,
+.cs-skin-underline li:nth-child(3) span::before {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.cs-skin-underline li:nth-child(2) span,
+.cs-skin-underline li:nth-child(2) span::before,
+.cs-skin-underline.cs-active li:nth-child(4) span,
+.cs-skin-underline.cs-active li:nth-child(4) span::before {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.cs-skin-underline li:first-child span,
+.cs-skin-underline li:first-child span::before,
+.cs-skin-underline.cs-active li:nth-child(5) span,
+.cs-skin-underline.cs-active li:nth-child(5) span::before {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+} /* more items require more delay declarations */
+
+.cs-skin-underline .cs-options li span:hover,
+.cs-skin-underline .cs-options li.cs-focus span,
+.cs-skin-underline li.cs-selected span {
+    color: #566473;
+    background: transparent;
+}
+
+/*admin video meta box*/
+
+.input-wrapper-row{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-bottom: 2%
+}
+
+.input-wrapper{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 45%;
+    padding: 15px;
+    margin-right: 2%
+}
+
+.input-wrapper label {
+    display: block;
+    font-weight: bold;
+}
+
+.input-wrapper input{
+    display: block;
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        display: inline-block;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li.current-menu-item a{
+        color: #000;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 75%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
